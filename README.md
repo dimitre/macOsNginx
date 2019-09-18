@@ -1,5 +1,12 @@
 # NGINX no macOS
 
+editando
+subl /usr/local/etc/nginx/
+
+brew services restart nginx
+
+
+
 Ideias: dockerise: 
 http://geekyplatypus.com/dockerise-your-php-application-with-nginx-and-php7-fpm/
 

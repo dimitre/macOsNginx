@@ -1,6 +1,13 @@
 # NGINX no macOS
 
-'''
+
+cd /usr/local/etc/nginx
+
+brew services restart nginx
+
+
+```
+
 brew install mariadb
 brew services start mariadb
 
@@ -26,4 +33,17 @@ The default port has been set in
 subl /usr/local/etc/nginx/nginx.conf 
 to 8080 so that
 nginx can run without sudo.
-'''
+
+
+
+post install
+cd /usr/local/etc/
+mv nginx nginx_bak
+mkdir nginx
+cd nginx
+git clone https://github.com/dimitre/macOsNginx .
+brew services restart nginx
+
+```
+
+

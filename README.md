@@ -31,9 +31,7 @@ post install
 ```
 cd /usr/local/etc/
 mv nginx nginx_bak
-mkdir nginx
-cd nginx
-git clone https://github.com/dimitre/macOsNginx .
+git clone https://github.com/dimitre/macOsNginx nginx
 brew services restart nginx
 ```
 

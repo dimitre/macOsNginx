@@ -1,18 +1,18 @@
 # NGINX no macOS
 
-cd /usr/local/etc/nginx
+```
+/opt/homebrew/etc/nginx/
+cd ..
+mv nginx nginx0
+git clone git@github.com:dimitre/macOsNginx.git nginx
 brew services restart nginx
-
-
 ```
 
-editando
-subl /usr/local/etc/nginx/
-
-brew services restart nginx
-
+## Editando
 ```
-Folder: /usr/local/etc/nginx/  
+subl /opt/homebrew/etc/nginx/
+brew services restart nginx
+```
 
 Ideias: dockerise: 
 http://geekyplatypus.com/dockerise-your-php-application-with-nginx-and-php7-fpm/
@@ -25,20 +25,8 @@ to 8080 so that
 nginx can run without sudo.
 
 
-
-post install
-
-```
-cd /usr/local/etc/
-mv nginx nginx_bak
-git clone https://github.com/dimitre/macOsNginx nginx
-brew services restart nginx
-```
-
-
 INSTALL LEMP no macOS
 ```
-
 
 brew install php mariadb nginx
 brew services start mariadb  

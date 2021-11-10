@@ -1,5 +1,6 @@
 # NGINX no macOS
 
+
 ```
 /opt/homebrew/etc/nginx/
 cd ..
